@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="codigo">Código:</label>
+                <input type="number" id="codigo">
+            </div>
+            <div>
+                <label for="nome">Nome:&nbsp;&nbsp;</label>
+                <input type="text" id="nome">
+            </div>
+            <div>
+                <label for="senha">Senha:&nbsp;&nbsp;</label>
+                <input type="password" id="senha">
+            </div>
+            <div>
+                <label for="senha">Sexo:&nbsp;&nbsp;</label>
+                <label for="masculino">
+                    <input type="radio" id="sexo_masculino" name="status">
+                    Masculino
+                </label>
+                <label for="feminino">
+                    <input type="radio" id="sexo_feminino" name="status">
+                    Feminino
+                </label>
+            </div>
+            <div>
+                <label for="cartao">Cartão Crédito:</label>
+                <select name="cartao">
+                    <option value="valor1">Mastercard</option>
+                    <option value="valor2" selected>Visa</option>
+                    <option value="valor3">American Express</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <div>
+                <label for="cartao">Cargo:</label>
+                <select name="cartao">
+                    <option value="valor1">Analista Júnior</option>
+                    <option value="valor2" selected>Analista Pleno</option>
+                    <option value="valor3">Analista Sênior</option>
+                </select>
+            </div>
+            <div>
+                <label for="senha">Dados Pessoais:&nbsp;&nbsp;</label> <br>
+                <input type="checkbox" id="fumante">
+                <label for="masculino">Fumante</label><br>
+                <input type="checkbox" id="exercicio">
+                <label for="feminino">Pratica Exercicios Físicos</label><br>
+                <input type="checkbox" id="bebida">
+                <label for="feminino">Consome Bebida Álcoolica</label><br>
+            </div>
+            <div>
+                <label for="experiencia">Experiência Profissionais:</label><br>
+                <textarea name="experiencia" id="exp_profissional" cols="40" rows="5"
+                    placeholder="Data Inicio / Data Fim / Empresa / Cargo"></textarea>
+            </div>
+        </fieldset>
+
+    </form>
+
+    <div>
+        <button type="button">Limpar</button>
+        <button type="button">Inserir</button>
+    </div>
+
+</body>
+
+</html>
